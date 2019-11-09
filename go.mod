@@ -1,6 +1,4 @@
-module github.com/otherview/protoactor-go
-
-go 1.13
+module github.com/AsynkronIT/protoactor-go
 
 require (
 	cloud.google.com/go v0.48.0 // indirect
