@@ -4,12 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/otherview/protoactor-go/remote"
+	"github.com/AsynkronIT/protoactor-go/cluster"
+	"github.com/AsynkronIT/protoactor-go/eventstream"
+	"github.com/AsynkronIT/protoactor-go/log"
+	"github.com/AsynkronIT/protoactor-go/remote"
 	"github.com/hashicorp/consul/api"
-	"github.com/otherview/protoactor-go/cluster"
-	"github.com/otherview/protoactor-go/log"
-	"github.com/otherview/protoactor-go/eventstream"
-
 )
 
 var (
@@ -37,8 +36,8 @@ type ConsulProvider struct {
 
 func New() (*ConsulProvider, error) {
 	return NewWithConfig(&api.Config{},
-		60 * time.Second,
-		20 * time.Second,
+		60*time.Second,
+		20*time.Second,
 	)
 }
 
@@ -171,7 +170,7 @@ func (p *ConsulProvider) registerService() error {
 		Port:    p.port,
 		Check: &api.AgentServiceCheck{
 			DeregisterCriticalServiceAfter: p.deregisterCritical.String(),
-			TTL: p.ttl.String(),
+			TTL:                            p.ttl.String(),
 		},
 	}
 	return p.client.Agent().ServiceRegister(s)

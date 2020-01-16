@@ -3,7 +3,7 @@ package router
 import (
 	"testing"
 
-	"github.com/otherview/protoactor-go/actor"
+	"github.com/AsynkronIT/protoactor-go/actor"
 	"github.com/stretchr/testify/assert"
 )
 

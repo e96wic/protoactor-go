@@ -1,7 +1,7 @@
 package cluster
 
 import (
-	"github.com/otherview/protoactor-go/log"
+	"github.com/AsynkronIT/protoactor-go/log"
 )
 
 var (

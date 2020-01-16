@@ -5,7 +5,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/otherview/protoactor-go/log"
+	"github.com/AsynkronIT/protoactor-go/log"
 	"github.com/emirpasic/gods/stacks/linkedliststack"
 )
 

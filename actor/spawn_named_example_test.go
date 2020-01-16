@@ -5,7 +5,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/otherview/protoactor-go/actor"
+	"github.com/AsynkronIT/protoactor-go/actor"
 )
 
 // Spawn creates instances of actors, similar to 'new' or 'make' but for actors.

@@ -9,7 +9,7 @@ import (
 
 	"github.com/labstack/echo"
 
-	"github.com/otherview/protoactor-go/cluster"
+	"github.com/AsynkronIT/protoactor-go/cluster"
 )
 
 var (

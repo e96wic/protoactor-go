@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"github.com/otherview/protoactor-go/actor"
+	"github.com/AsynkronIT/protoactor-go/actor"
 )
 
 type randomGroupRouter struct {

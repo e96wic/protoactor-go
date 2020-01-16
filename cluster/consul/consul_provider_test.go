@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/otherview/protoactor-go/cluster"
-	"github.com/otherview/protoactor-go/eventstream"
+	"github.com/AsynkronIT/protoactor-go/cluster"
+	"github.com/AsynkronIT/protoactor-go/eventstream"
 )
 
 func TestRegisterMember(t *testing.T) {
@@ -45,14 +45,14 @@ func TestRegisterMultipleMembers(t *testing.T) {
 		return
 	}
 
-	members := []struct{
+	members := []struct {
 		cluster string
 		address string
-		port int
-	} {
-		{"mycluster2", "127.0.0.1", 8001 },
-		{"mycluster2", "127.0.0.1", 8002 },
-		{"mycluster2", "127.0.0.1", 8003 },
+		port    int
+	}{
+		{"mycluster2", "127.0.0.1", 8001},
+		{"mycluster2", "127.0.0.1", 8002},
+		{"mycluster2", "127.0.0.1", 8003},
 	}
 
 	p, _ := New()

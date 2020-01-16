@@ -10,10 +10,10 @@ import (
 
 	"golang.org/x/net/context"
 
+	"github.com/AsynkronIT/protoactor-go/cluster"
+	"github.com/AsynkronIT/protoactor-go/eventstream"
+	"github.com/AsynkronIT/protoactor-go/log"
 	"github.com/labstack/echo"
-	"github.com/otherview/protoactor-go/cluster"
-	"github.com/otherview/protoactor-go/eventstream"
-	"github.com/otherview/protoactor-go/log"
 	"golang.org/x/sync/errgroup"
 )
 

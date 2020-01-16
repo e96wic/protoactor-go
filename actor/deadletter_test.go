@@ -3,7 +3,7 @@ package actor
 import (
 	"testing"
 
-	"github.com/otherview/protoactor-go/eventstream"
+	"github.com/AsynkronIT/protoactor-go/eventstream"
 	"github.com/stretchr/testify/assert"
 )
 

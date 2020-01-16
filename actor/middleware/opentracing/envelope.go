@@ -1,7 +1,7 @@
 package opentracing
 
 import (
-	"github.com/otherview/protoactor-go/actor"
+	"github.com/AsynkronIT/protoactor-go/actor"
 	"github.com/opentracing/opentracing-go"
 )
 

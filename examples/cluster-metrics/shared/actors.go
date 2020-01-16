@@ -1,13 +1,13 @@
 package shared
 
-import "github.com/otherview/protoactor-go/cluster"
+import "github.com/AsynkronIT/protoactor-go/cluster"
 
 // a Go struct implementing the Hello interface
 type hello struct {
 	cluster.Grain
 }
 
-func (*hello) Terminate()  {}
+func (*hello) Terminate() {}
 
 func (h *hello) SayHello(r *HelloRequest, ctx cluster.GrainContext) (*HelloResponse, error) {
 	return &HelloResponse{Message: "hello " + r.Name + " from " + h.ID()}, nil
