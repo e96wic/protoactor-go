@@ -10,7 +10,7 @@ import (
 
 	"github.com/gomodule/redigo/redis"
 
-	"github.com/otherview/protoactor-go/cluster"
+	"github.com/AsynkronIT/protoactor-go/cluster"
 	"github.com/rafaeljusto/redigomock"
 )
 

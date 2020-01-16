@@ -2,7 +2,7 @@ package shared
 
 import (
 	"fmt"
-	"github.com/otherview/protoactor-go/cluster"
+	"github.com/AsynkronIT/protoactor-go/cluster"
 )
 
 type TrackGrain struct {
@@ -10,12 +10,12 @@ type TrackGrain struct {
 	grainsMap map[string]bool
 }
 
-func (t *TrackGrain) Init(id string)  {
+func (t *TrackGrain) Init(id string) {
 	t.Grain.Init(id)
 	t.grainsMap = map[string]bool{}
 }
 
-func (t *TrackGrain) Terminate()  {
+func (t *TrackGrain) Terminate() {
 }
 
 func (t *TrackGrain) RegisterGrain(n *RegisterMessage, ctx cluster.GrainContext) (*Noop, error) {

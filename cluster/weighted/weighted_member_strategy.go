@@ -1,6 +1,6 @@
 package weighted
 
-import "github.com/otherview/protoactor-go/cluster"
+import "github.com/AsynkronIT/protoactor-go/cluster"
 
 type WeightedMemberStrategy struct {
 	members []*cluster.MemberStatus

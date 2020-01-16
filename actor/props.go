@@ -3,7 +3,7 @@ package actor
 import (
 	"errors"
 
-	"github.com/otherview/protoactor-go/mailbox"
+	"github.com/AsynkronIT/protoactor-go/mailbox"
 )
 
 // Props types

@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/AsynkronIT/protoactor-go/cluster"
+	"github.com/AsynkronIT/protoactor-go/eventstream"
+	"github.com/AsynkronIT/protoactor-go/log"
 	"github.com/gomodule/redigo/redis"
-	"github.com/otherview/protoactor-go/cluster"
-	"github.com/otherview/protoactor-go/eventstream"
-	"github.com/otherview/protoactor-go/log"
 )
 
 var (
